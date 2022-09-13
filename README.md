@@ -14,7 +14,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ##
@@ -25,3 +25,4 @@ Schedule meetings, tasks, engagements and keep track of all of these using the "
 ![IMG 1](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG1.png)
 ![IMG 2](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG2.png)
 ![IMG 3](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG3.png)
+![IMG 4](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG4.png)

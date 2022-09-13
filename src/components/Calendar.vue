@@ -11,7 +11,7 @@
             </div>
          </div>
          <ul class="days-list">
-            <li v-for="(day, index) in daysOfTheWeek" :key="index">{{ day }}</li>
+            <li v-for="(day, index) in daysOfTheWeek" :key="index">{{ day.substr(0,3) }}</li>
          </ul>
          <div class="numbers">
             <div
@@ -68,6 +68,15 @@ export default defineComponent({
       const day = computed(() => date.value.getDate())
 
       // Methods
+      const pushDate = (array: Dates[], date: number, month: number, year: number): void => {
+         array.push({
+            date,
+            month,
+            events: [],
+            year,
+         })
+      }
+
       const setDaysToDisplay = (): void => {
          const dayWithTheFirstDate = new Date(year.value, month.value, 1).getDay()
          const numberOfDaysForPresentMonth = new Date(year.value, month.value+1, 0).getDate()
@@ -89,6 +98,7 @@ export default defineComponent({
 
       // Set date on Next and Prev click
       const setDate = (operator: string) => {
+         daysToDisplay.value = []
          const operation = operator === 'add' ? +1 : -1
          date.value.setMonth(month.value + operation)
          date.value = new Date(date.value)

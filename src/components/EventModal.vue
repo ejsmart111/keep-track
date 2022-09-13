@@ -35,12 +35,12 @@
 
          <div class="mt-1 flex s-between" v-if="isRemote === Location.OnSite">
             <div>
-               <label class="label">Longitude</label>
-               <input type="number" class="form-control lnglat" v-model="longLat.lng" /><br>
-            </div>
-            <div>
                <label class="label">Latitude</label>
                <input type="number" class="form-control lnglat" v-model="longLat.lat" />
+            </div>
+            <div>
+               <label class="label">Longitude</label>
+               <input type="number" class="form-control lnglat" v-model="longLat.lng" /><br>
             </div>
          </div>
 
@@ -144,6 +144,7 @@ export default defineComponent({
       }
       const addNewEvent = () => {
          isUpdate.value = false
+         reinitializeForm()
          showForm.value = !showForm.value
       }
       const removeToast = () => {
@@ -175,6 +176,7 @@ export default defineComponent({
                      dateDetails.value.events.splice(i, 1, event)
                   }
                   events.splice(index, 1, event)
+                  showForm.value = false
                   window.localStorage.setItem('events', JSON.stringify(events))
                   toastObj.message = 'Item has been updated',
                   toastObj.type = 'Update'
@@ -195,7 +197,10 @@ export default defineComponent({
       const reinitializeForm = () => {
          title.value = ''
          isRemote.value = 1
-         longLat = {lng: 0, lat: 0}
+         Object.assign(longLat, {
+            lng: 0,
+            lat: 0
+         })
          link.value = ''
       }
       const editEvent = (event: EventModel) => {

@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 ## Project Setup
 ```
-
+`
 npm install
 ```
 
@@ -23,6 +23,9 @@ npm run dev
 Schedule meetings, tasks, engagements and keep track of all of these using the "Keep track" application. Currently, this application works using your browser's localStorage as its database. Some images of this app is injected below:
 
 ![IMG 1](https://github.com/ejsmart111/keep-track/blob/master/public/IMG1.png)
+
 ![IMG 2](https://github.com/ejsmart111/keep-track/blob/master/public/IMG2.png)
+
 ![IMG 3](https://github.com/ejsmart111/keep-track/blob/master/public/IMG3.png)
+
 ![IMG 4](https://github.com/ejsmart111/keep-track/blob/master/public/IMG4.png)

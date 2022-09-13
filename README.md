@@ -22,7 +22,7 @@ npm run dev
 ## App Description
 Schedule meetings, tasks, engagements and keep track of all of these using the "Keep track" application. Currently, this application works using your browser's localStorage as its database. Some images of this app is injected below:
 
-![IMG 1](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG1.png)
-![IMG 2](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG2.png)
-![IMG 3](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG3.png)
-![IMG 4](https://github.com/ejsmart111/keep-track/blob/master/src/assets/IMG4.png)
+![IMG 1](https://github.com/ejsmart111/keep-track/blob/master/public/IMG1.png)
+![IMG 2](https://github.com/ejsmart111/keep-track/blob/master/public/IMG2.png)
+![IMG 3](https://github.com/ejsmart111/keep-track/blob/master/public/IMG3.png)
+![IMG 4](https://github.com/ejsmart111/keep-track/blob/master/public/IMG4.png)

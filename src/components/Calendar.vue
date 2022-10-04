@@ -112,7 +112,7 @@ export default defineComponent({
       }
 
       const fetchEventsFromStorage = () => {
-         const events = JSON.parse(window.localStorage.getItem('events') as string)
+         const events = JSON.parse(window.localStorage.getItem('events') as string) || []
          events.forEach((event: EventModel) => {
             const day = daysToDisplay.value.find(date => date.month === event.month && date.date === event.day && date.year === event.year)
             if (day)
